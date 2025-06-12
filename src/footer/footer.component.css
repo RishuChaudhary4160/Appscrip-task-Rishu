@@ -1,0 +1,133 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #333;
+}
+
+.subscription h3,
+.contact h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.subscription p,
+.contact p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.subscription-form {
+    display: flex;
+    gap: 10px;
+}
+
+.subscription-form input {
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background: transparent;
+    color: #fff;
+    width: 200px;
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.currency {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.currency img {
+    height: 20px;
+}
+
+.currency-note {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-icons,
+.payment-methods {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img,
+.payment-methods img {
+    height: 24px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .subscription-form input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .subscription h3,
+    .contact h3,
+    .footer-section h3 {
+        font-size: 16px;
+    }
+
+    .subscription p,
+    .contact p,
+    .footer-section a {
+        font-size: 12px;
+    }
+}

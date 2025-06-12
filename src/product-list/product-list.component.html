@@ -1,0 +1,85 @@
+<section class="product-list">
+    <div class="product-header">
+        <h1>Discover Our Products</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus scelerisque.
+            Dolor integer scelerisque nibh amet mi ut elementum dolor.
+        </p>
+    </div>
+    <div class="product-container">
+        <aside class="filters">
+            <div class="filter-group">
+                <label>Segment</label>
+                <select>
+                    <option>All</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Suitable For</label>
+                <select>
+                    <option>All</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Raw Materials</label>
+                <select>
+                    <option>All</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Pattern</label>
+                <select>
+                    <option>All</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Customizable</label>
+                <input type="checkbox" />
+            </div>
+            <div class="filter-group">
+                <label>Ideal For</label>
+                <select>
+                    <option>All</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Occasion</label>
+                <select>
+                    <option>All</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Work</label>
+                <select>
+                    <option>All</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Fabric</label>
+                <select>
+                    <option>All</option>
+                </select>
+            </div>
+        </aside>
+        <div class="product-grid">
+            <div class="grid-header">
+                <span>3425 Items</span>
+                <button class="hide-filter">Hide Filter</button>
+                <select class="sort">
+                    <option>Recommended</option>
+                </select>
+            </div>
+            <div class="products">
+                <div class="product-card" *ngFor="let product of products">
+                    <div class="product-image">
+                        <img [src]="product.image" [alt]="product.title" />
+                        <span class="stock-status" *ngIf="product.outOfStock">Out of Stock</span>
+                    </div>
+                    <h2 class="product-title">{{ product.title }}</h2>
+                    <p class="sign-in-text">Sign in or Create an account to see pricing</p>
+                    <img src="assets/heart-icon.png" alt="Add to Wishlist" class="wishlist-icon" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
